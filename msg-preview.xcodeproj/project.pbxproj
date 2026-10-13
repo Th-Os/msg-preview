@@ -10,7 +10,35 @@
 		3BD996442C3EBB370074E7A5 /* msg_previewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD996432C3EBB370074E7A5 /* msg_previewApp.swift */; };
 		3BD9964A2C3EBB380074E7A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD996492C3EBB380074E7A5 /* Assets.xcassets */; };
 		3BD9964D2C3EBB380074E7A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD9964C2C3EBB380074E7A5 /* Preview Assets.xcassets */; };
+		3BD9965B2C3EBB910074E7A5 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD9965A2C3EBB910074E7A5 /* Quartz.framework */; };
+		3BD996602C3EBB910074E7A5 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9965F2C3EBB910074E7A5 /* PreviewProvider.swift */; };
+		3BD996682C3EBB910074E7A5 /* msg-ql-extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3BD996582C3EBB910074E7A5 /* msg-ql-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3BD9967C2C450B9F0074E7A5 /* MsgPreviewCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD9967B2C450B9F0074E7A5 /* MsgPreviewCore */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BD996662C3EBB910074E7A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BD996382C3EBB360074E7A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3BD996572C3EBB910074E7A5;
+			remoteInfo = "msg-ql-extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3BD9966C2C3EBB910074E7A5 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3BD996682C3EBB910074E7A5 /* msg-ql-extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3BD996402C3EBB360074E7A5 /* msg-preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "msg-preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,7 +46,13 @@
 		3BD996492C3EBB380074E7A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BD9964C2C3EBB380074E7A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BD9964E2C3EBB380074E7A5 /* msg_preview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = msg_preview.entitlements; sourceTree = "<group>"; };
+		3BD996582C3EBB910074E7A5 /* msg-ql-extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "msg-ql-extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BD9965A2C3EBB910074E7A5 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		3BD9965F2C3EBB910074E7A5 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		3BD996642C3EBB910074E7A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BD996652C3EBB910074E7A5 /* msg_ql_extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = msg_ql_extension.entitlements; sourceTree = "<group>"; };
 		3BD9967D2C453BD30074E7A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3BD996802C4569340074E7A5 /* MsgPreviewCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MsgPreviewCore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,13 +63,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BD996552C3EBB910074E7A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD9965B2C3EBB910074E7A5 /* Quartz.framework in Frameworks */,
+				3BD9967C2C450B9F0074E7A5 /* MsgPreviewCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3BD996372C3EBB360074E7A5 = {
 			isa = PBXGroup;
 			children = (
+				3BD996802C4569340074E7A5 /* MsgPreviewCore */,
 				3BD996422C3EBB360074E7A5 /* msg-preview */,
+				3BD9965C2C3EBB910074E7A5 /* msg-ql-extension */,
+				3BD996592C3EBB910074E7A5 /* Frameworks */,
 				3BD996412C3EBB360074E7A5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				3BD996402C3EBB360074E7A5 /* msg-preview.app */,
+				3BD996582C3EBB910074E7A5 /* msg-ql-extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +115,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3BD996592C3EBB910074E7A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BD9965A2C3EBB910074E7A5 /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3BD9965C2C3EBB910074E7A5 /* msg-ql-extension */ = {
+			isa = PBXGroup;
+			children = (
+				3BD9965F2C3EBB910074E7A5 /* PreviewProvider.swift */,
+				3BD996642C3EBB910074E7A5 /* Info.plist */,
+				3BD996652C3EBB910074E7A5 /* msg_ql_extension.entitlements */,
+			);
+			path = "msg-ql-extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,10 +143,12 @@
 				3BD9963C2C3EBB360074E7A5 /* Sources */,
 				3BD9963D2C3EBB360074E7A5 /* Frameworks */,
 				3BD9963E2C3EBB360074E7A5 /* Resources */,
+				3BD9966C2C3EBB910074E7A5 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3BD996672C3EBB910074E7A5 /* PBXTargetDependency */,
 			);
 			name = "msg-preview";
 			packageProductDependencies = (
@@ -89,6 +156,26 @@
 			productName = "msg-preview";
 			productReference = 3BD996402C3EBB360074E7A5 /* msg-preview.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3BD996572C3EBB910074E7A5 /* msg-ql-extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BD996692C3EBB910074E7A5 /* Build configuration list for PBXNativeTarget "msg-ql-extension" */;
+			buildPhases = (
+				3BD996542C3EBB910074E7A5 /* Sources */,
+				3BD996552C3EBB910074E7A5 /* Frameworks */,
+				3BD996562C3EBB910074E7A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "msg-ql-extension";
+			packageProductDependencies = (
+				3BD9967B2C450B9F0074E7A5 /* MsgPreviewCore */,
+			);
+			productName = "msg-ql-extension";
+			productReference = 3BD996582C3EBB910074E7A5 /* msg-ql-extension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -103,6 +190,9 @@
 					3BD9963F2C3EBB360074E7A5 = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					3BD996572C3EBB910074E7A5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = 3BD9963B2C3EBB360074E7A5 /* Build configuration list for PBXProject "msg-preview" */;
@@ -115,12 +205,14 @@
 			);
 			mainGroup = 3BD996372C3EBB360074E7A5;
 			packageReferences = (
+				3BD996782C417A5A0074E7A5 /* XCLocalSwiftPackageReference "MsgPreviewCore" */,
 			);
 			productRefGroup = 3BD996412C3EBB360074E7A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				3BD9963F2C3EBB360074E7A5 /* msg-preview */,
+				3BD996572C3EBB910074E7A5 /* msg-ql-extension */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +227,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BD996562C3EBB910074E7A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,7 +245,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BD996542C3EBB910074E7A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD996602C3EBB910074E7A5 /* PreviewProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BD996672C3EBB910074E7A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3BD996572C3EBB910074E7A5 /* msg-ql-extension */;
+			targetProxy = 3BD996662C3EBB910074E7A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3BD9964F2C3EBB380074E7A5 /* Debug */ = {
@@ -323,6 +438,54 @@
 			};
 			name = Release;
 		};
+		3BD9966A2C3EBB910074E7A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "msg-ql-extension/msg_ql_extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "msg-ql-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "msg-ql-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.th-os.msg-preview.msg-ql-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3BD9966B2C3EBB910074E7A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "msg-ql-extension/msg_ql_extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "msg-ql-extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "msg-ql-extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.th-os.msg-preview.msg-ql-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -344,9 +507,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		3BD996692C3EBB910074E7A5 /* Build configuration list for PBXNativeTarget "msg-ql-extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BD9966A2C3EBB910074E7A5 /* Debug */,
+				3BD9966B2C3EBB910074E7A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		3BD996782C417A5A0074E7A5 /* XCLocalSwiftPackageReference "MsgPreviewCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = MsgPreviewCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		3BD9967B2C450B9F0074E7A5 /* MsgPreviewCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MsgPreviewCore;
+		};
 /* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3BD996382C3EBB360074E7A5 /* Project object */;
