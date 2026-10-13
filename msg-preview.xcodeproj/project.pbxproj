@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3BD996442C3EBB370074E7A5 /* msg_previewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD996432C3EBB370074E7A5 /* msg_previewApp.swift */; };
+		3BD996462C3EBB370074E7A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD996452C3EBB370074E7A5 /* ContentView.swift */; };
+		3BD996482C3EBB370074E7A5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD996472C3EBB370074E7A5 /* Item.swift */; };
 		3BD9964A2C3EBB380074E7A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD996492C3EBB380074E7A5 /* Assets.xcassets */; };
 		3BD9964D2C3EBB380074E7A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BD9964C2C3EBB380074E7A5 /* Preview Assets.xcassets */; };
 		3BD9965B2C3EBB910074E7A5 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD9965A2C3EBB910074E7A5 /* Quartz.framework */; };
 		3BD996602C3EBB910074E7A5 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD9965F2C3EBB910074E7A5 /* PreviewProvider.swift */; };
 		3BD996682C3EBB910074E7A5 /* msg-ql-extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3BD996582C3EBB910074E7A5 /* msg-ql-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3BD9967A2C417A5A0074E7A5 /* MsgPreviewCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD996792C417A5A0074E7A5 /* MsgPreviewCore */; };
 		3BD9967C2C450B9F0074E7A5 /* MsgPreviewCore in Frameworks */ = {isa = PBXBuildFile; productRef = 3BD9967B2C450B9F0074E7A5 /* MsgPreviewCore */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,8 @@
 /* Begin PBXFileReference section */
 		3BD996402C3EBB360074E7A5 /* msg-preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "msg-preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD996432C3EBB370074E7A5 /* msg_previewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = msg_previewApp.swift; sourceTree = "<group>"; };
+		3BD996452C3EBB370074E7A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3BD996472C3EBB370074E7A5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		3BD996492C3EBB380074E7A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BD9964C2C3EBB380074E7A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BD9964E2C3EBB380074E7A5 /* msg_preview.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = msg_preview.entitlements; sourceTree = "<group>"; };
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD9967A2C417A5A0074E7A5 /* MsgPreviewCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +106,8 @@
 			children = (
 				3BD9967D2C453BD30074E7A5 /* Info.plist */,
 				3BD996432C3EBB370074E7A5 /* msg_previewApp.swift */,
+				3BD996452C3EBB370074E7A5 /* ContentView.swift */,
+				3BD996472C3EBB370074E7A5 /* Item.swift */,
 				3BD996492C3EBB380074E7A5 /* Assets.xcassets */,
 				3BD9964E2C3EBB380074E7A5 /* msg_preview.entitlements */,
 				3BD9964B2C3EBB380074E7A5 /* Preview Content */,
@@ -152,6 +160,7 @@
 			);
 			name = "msg-preview";
 			packageProductDependencies = (
+				3BD996792C417A5A0074E7A5 /* MsgPreviewCore */,
 			);
 			productName = "msg-preview";
 			productReference = 3BD996402C3EBB360074E7A5 /* msg-preview.app */;
@@ -241,6 +250,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BD996462C3EBB370074E7A5 /* ContentView.swift in Sources */,
+				3BD996482C3EBB370074E7A5 /* Item.swift in Sources */,
 				3BD996442C3EBB370074E7A5 /* msg_previewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +537,10 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3BD996792C417A5A0074E7A5 /* MsgPreviewCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MsgPreviewCore;
+		};
 		3BD9967B2C450B9F0074E7A5 /* MsgPreviewCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MsgPreviewCore;

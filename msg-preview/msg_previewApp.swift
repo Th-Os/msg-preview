@@ -6,20 +6,49 @@
 //
 
 import SwiftUI
+#if DEBUG
+import SwiftData
+#endif
 
 @main
 struct msg_previewApp: App {
+    #if DEBUG
+    var sharedModelContainer: ModelContainer = {
+        let schema = Schema([
+            Item.self,
+        ])
+        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+
+        do {
+            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+        } catch {
+            fatalError("Could not create ModelContainer: \(error)")
+        }
+    }()
+    #endif
+
     var body: some Scene {
         Window("msg-preview", id: "main") {
             StatusView()
         }
         .windowResizability(.contentSize)
+
+        #if DEBUG
+        Window("Debug", id: "debug") {
+            ContentView()
+        }
+        .modelContainer(sharedModelContainer)
+        #endif
     }
 }
 
 struct StatusView: View {
     // Opens System Settings on the Quick Look extensions list.
     private let extensionsSettingsURL = URL(string: "x-apple.systempreferences:com.apple.ExtensionsPreferences?extensionPointIdentifier=com.apple.quicklook.preview")!
+
+    #if DEBUG
+    @Environment(\.openWindow) private var openWindow
+    #endif
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -40,6 +69,12 @@ struct StatusView: View {
                     NSWorkspace.shared.open(extensionsSettingsURL)
                 }
                 .keyboardShortcut(.defaultAction)
+
+                #if DEBUG
+                Button("Debug") {
+                    openWindow(id: "debug")
+                }
+                #endif
             }
         }
         .fixedSize(horizontal: false, vertical: true)
