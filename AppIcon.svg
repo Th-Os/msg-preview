@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Master artwork for Assets.xcassets/AppIcon.appiconset. Regenerate PNGs with: swift scripts/render-icon.swift -->
+  <defs>
+    <linearGradient id="bg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="1024">
+      <stop offset="0" stop-color="#2A2E38"/>
+      <stop offset="1" stop-color="#15171D"/>
+    </linearGradient>
+  </defs>
+  <!-- macOS icon grid: the squircle sits on an 824 px square centered in the 1024 canvas -->
+  <g transform="translate(100 100) scale(0.8046875)">
+    <rect x="0" y="0" width="1024" height="1024" rx="230" fill="url(#bg)"/>
+    <g fill="none" stroke="#F4F1EA" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="208" y="328" width="560" height="384" rx="48"/>
+      <path d="M238 372 L488 572 L738 372"/>
+    </g>
+    <!-- knockout so the envelope lines stop short of the lens -->
+    <circle cx="716" cy="668" r="166" fill="url(#bg)"/>
+    <g fill="none" stroke="#F4F1EA" stroke-width="36" stroke-linecap="round">
+      <circle cx="716" cy="668" r="116"/>
+      <path d="M804 756 L872 824"/>
+    </g>
+  </g>
+</svg>

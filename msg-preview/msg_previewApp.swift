@@ -52,9 +52,14 @@ struct StatusView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            Text("Quick Look for Outlook .msg files")
-                .font(.title2)
-                .bold()
+            HStack(spacing: 16) {
+                Image(nsImage: NSApp.applicationIconImage)
+                    .resizable()
+                    .frame(width: 72, height: 72)
+                Text("Quick Look for Outlook .msg files")
+                    .font(.title2)
+                    .bold()
+            }
 
             Text("This app only needs to be installed. The preview itself is provided by a Quick Look extension that macOS registers the first time the app is launched.")
 
