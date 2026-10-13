@@ -1,0 +1,68 @@
+{
+  "pins" : [
+    {
+      "identity" : "compoundfilereader",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hughbe/CompoundFileReader",
+      "state" : {
+        "revision" : "abe334f701329099c6d0537a05cd65c101e8727a",
+        "version" : "1.0.12"
+      }
+    },
+    {
+      "identity" : "compressedrtf",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hughbe/CompressedRtf",
+      "state" : {
+        "revision" : "63107959f2dd99ed8758c95498c0e383c1b0d10e",
+        "version" : "1.0.3"
+      }
+    },
+    {
+      "identity" : "datastream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hughbe/DataStream",
+      "state" : {
+        "revision" : "36347be43d95e15263a37883ffc341019fdb733b",
+        "version" : "2.0.5"
+      }
+    },
+    {
+      "identity" : "msgreader",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hughbe/MsgReader",
+      "state" : {
+        "revision" : "68b8938879886dddf1185eea351289c2dbcee8e2",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swiftbitfield",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hughbe/SwiftBitField",
+      "state" : {
+        "revision" : "58adee709619b00175ad660cf0755fd2cd0d7af1",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "swiftmapi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hughbe/SwiftMAPI",
+      "state" : {
+        "revision" : "08bce5dc68a2be1b129823a2d966be78e82ebfc8",
+        "version" : "1.2.5"
+      }
+    },
+    {
+      "identity" : "windowsdatatypes",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hughbe/WindowsDataTypes",
+      "state" : {
+        "revision" : "470932b721d9f2590aca2ed5850e58cf5b4f0492",
+        "version" : "1.0.13"
+      }
+    }
+  ],
+  "version" : 2
+}
