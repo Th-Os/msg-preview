@@ -10,11 +10,11 @@
 				<string>public.data</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Outlook Message - dyn.ah62d4rv4ge80465h</string>
+			<string>Outlook Message</string>
 			<key>UTTypeIcons</key>
 			<dict/>
 			<key>UTTypeIdentifier</key>
-			<string>io.github.th-os.msg</string>
+			<string>com.microsoft.outlook.msg</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>

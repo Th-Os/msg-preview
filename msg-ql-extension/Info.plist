@@ -10,7 +10,7 @@
 			<true/>
 			<key>QLSupportedContentTypes</key>
 			<array>
-				<string>io.github.th-os.msg</string>
+				<string>com.microsoft.outlook.msg</string>
 			</array>
 			<key>QLSupportsSearchableItems</key>
 			<false/>
